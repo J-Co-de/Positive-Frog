@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Froggy Society</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/logo.png" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header id="top">
+      <a class="brand" href="#top" aria-label="Positive Frog home">
+        <svg
+          viewBox="0 0 260 230"
+          class="frog-logo"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M53 87c0-23 9-42 30-45 21-3 29 12 47 12s26-15 47-12c21 3 30 22 30 45 12 10 19 22 19 36 0 36-43 57-96 57s-96-21-96-57c0-14 7-26 19-36Z"
+            fill="#8fb45e"
+            transform="translate(0 -18)"
+          ></path>
+          <circle cx="83" cy="70" r="20" fill="#f9f7e9"></circle>
+          <circle cx="177" cy="70" r="20" fill="#f9f7e9"></circle>
+          <ellipse cx="87" cy="73" rx="7" ry="10" fill="#293f2b"></ellipse>
+          <ellipse cx="173" cy="73" rx="7" ry="10" fill="#293f2b"></ellipse>
+          <circle cx="89" cy="69" r="2.5" fill="white"></circle>
+          <circle cx="175" cy="69" r="2.5" fill="white"></circle>
+          <ellipse
+            cx="66"
+            cy="117"
+            rx="15"
+            ry="8"
+            fill="#e5a396"
+            opacity=".85"
+          ></ellipse>
+          <ellipse
+            cx="194"
+            cy="117"
+            rx="15"
+            ry="8"
+            fill="#e5a396"
+            opacity=".85"
+          ></ellipse>
+          <path
+            d="M104 113c9 14 43 14 52 0"
+            stroke="#345033"
+            stroke-width="3.5"
+            stroke-linecap="round"
+          ></path>
+          <circle cx="119" cy="101" r="2" fill="#527c3c"></circle>
+          <circle cx="141" cy="101" r="2" fill="#527c3c"></circle>
+        </svg>
+
+        <h2>positive frog.</h2>
+      </a>
+      <ul class="hyper-links">
+        <li><a href="#pond">The pond</a></li>
+        <li><a href="#little-joys">Little joys</a></li>
+        <li>
+          <button class="note-link" id="open-note" type="button">
+            A note for frog
+          </button>
+        </li>
+      </ul>
+      <button
+        id="sound-toggle"
+        class="sound-toggle"
+        type="button"
+        aria-pressed="false"
+      >
+        Sound off
+      </button>
+    </header>
+    <main>
+      <section class="hero" id="pond">
+        <div class="text">
+          <span class="tagline">Your very own happy place</span>
+          <h1>
+            A little pond.
+            <br />
+            A lot of <span class="eye-catcher">positivity</span>!
+          </h1>
+          <p>
+            Hey, positive frog. Ribbit Ribbit. Here’s a little corner of the
+            internet that’s always on your side. Ribbit Ribbit.
+          </p>
+          <button class="primary boost-btn">
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z"
+              ></path>
+            </svg>
+            Give me a little boost!
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14m-5-5 5 5-5 5"></path>
+            </svg>
+          </button>
+          <footer>Ribbit Ribbit</footer>
+        </div>
+        <div class="scene">
+          <svg
+            class="pond-landscape"
+            viewBox="0 0 570 430"
+            fill="none"
+            aria-hidden="true"
+          >
+            <!-- Sunshine and clouds -->
+            <circle cx="433" cy="84" r="34" fill="#e9ca79" />
+
+            <path
+              d="M68 79c5-18 25-19 33-5 15-8 30 1 30 13H56c0-7 5-10 12-8Zm254 46c4-13 20-15 27-3 13-5 25 2 26 11h-65c0-6 5-9 12-8Z"
+              fill="#fffdf2"
+            />
+
+            <!-- Grassy banks and pond -->
+            <path
+              d="M0 289c81-49 126-22 183-13s129-29 209-11 122 4 178-21v186H0V289Z"
+              fill="#d5ddaa"
+            />
+
+            <path
+              d="M0 334c83-29 137 6 222-8s153-23 221-1 85 4 127-1v106H0v-96Z"
+              fill="#c1d4b5"
+            />
+
+            <ellipse cx="296" cy="348" rx="193" ry="48" fill="#b1c9aa" />
+
+            <path
+              d="M148 348h49m194 14h51M85 377h46m251 25h57m-156-10h39"
+              stroke="#edf0d6"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+
+            <!-- Leaves -->
+            <path
+              d="M395 342c-12-31 8-64 15-64-4 29-9 41-15 64Z"
+              fill="#6f8f51"
+            />
+
+            <path
+              d="M400 344c0-21 17-34 30-34-5 20-15 32-30 34Z"
+              fill="#87a260"
+            />
+
+            <!-- Left cattails -->
+            <path
+              d="M45 322V211m17 119V235m-28 93c-8-37-18-55-28-62m43 61c0-30 7-51 23-65"
+              stroke="#748650"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+
+            <rect x="38" y="185" width="14" height="51" rx="7" fill="#a17b52" />
+
+            <rect x="55" y="215" width="14" height="43" rx="7" fill="#a17b52" />
+
+            <!-- Right cattails -->
+            <path
+              d="M514 353V251m17 110v-80m-24 75c-3-28-15-46-27-55m48 54c4-19 13-33 30-41"
+              stroke="#73894f"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+
+            <rect
+              x="507"
+              y="228"
+              width="14"
+              height="45"
+              rx="7"
+              fill="#a17b52"
+            />
+
+            <!-- Main lily pad -->
+            <path
+              d="M172 337c0-25 64-37 109-33l14 20 23-17c47 7 75 23 68 36-12 25-210 29-214-6Z"
+              fill="#7c9d59"
+            />
+
+            <path
+              d="m295 324-40 21m40-21 35 23m-35-23-83-1"
+              stroke="#9fb775"
+              stroke-width="1.5"
+            />
+
+            <!-- Small lily pads -->
+            <ellipse cx="110" cy="363" rx="28" ry="10" fill="#8fa768" />
+            <path d="m109 356 9 7-9 1" fill="#b1c9aa" />
+
+            <ellipse cx="434" cy="384" rx="34" ry="11" fill="#8fa768" />
+            <path d="m435 377-8 9h8" fill="#b1c9aa" />
+
+            <!-- Water lily -->
+            <path
+              d="M436 369c-15-15-16-27-7-26 1-12 9-15 14-2 9-7 17 0 10 11 14 0 5 14-17 17Z"
+              fill="#e9b4b0"
+            />
+
+            <path d="M429 367c-7-9-3-20 7-13 9-8 12 6-7 13Z" fill="#f9d9be" />
+
+            <path
+              d="m178 96 4-10m3 15 10-4m-23-5-5-8"
+              stroke="#98a46b"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <div class="frog-label">
+            <span>your little hype frog</span>
+            <svg
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M3 4c30-7 36 6 24 27m-6-7 6 9 10-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <button
+            class="frog-button"
+            type="button"
+            aria-label="Give your positive frog a little hop"
+          >
+            <svg
+              class="frog-character"
+              viewBox="0 0 260 230"
+              fill="none"
+              aria-hidden="true"
+            >
+              <!-- Shadow and legs -->
+              <ellipse
+                cx="130"
+                cy="207"
+                rx="94"
+                ry="13"
+                fill="#57723b"
+                opacity=".13"
+              />
+
+              <ellipse
+                cx="72"
+                cy="171"
+                rx="39"
+                ry="35"
+                fill="#33472C"
+                transform="rotate(-22 72 171)"
+              />
+
+              <ellipse
+                cx="188"
+                cy="171"
+                rx="39"
+                ry="35"
+                fill="#33472C"
+                transform="rotate(22 188 171)"
+              />
+
+              <path
+                d="M82 144c-9 19-19 44-13 52 5 7 22 8 32 1m77-53c9 19 19 44 13 52-5 7-22 8-32 1"
+                stroke="#3e6230"
+                stroke-width="4"
+              />
+
+              <!-- Body and belly -->
+              <ellipse cx="130" cy="154" rx="64" ry="55" fill="#8cae5c" />
+
+              <ellipse cx="130" cy="166" rx="40" ry="37" fill="#c5d990" />
+
+              <path
+                d="M106 157c-3 17-4 36-9 44m57-44c3 17 4 36 9 44"
+                stroke="#456433"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+
+              <path
+                d="M89 202h22m38 0h22"
+                stroke="#456433"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+
+              <!-- Head -->
+              <path
+                d="M53 87c0-23 9-42 30-45 21-3 29 12 47 12s26-15 47-12c21 3 30 22 30 45 12 10 19 22 19 36 0 36-43 57-96 57s-96-21-96-57c0-14 7-26 19-36Z"
+                fill="#8fb45e"
+                transform="translate(0 -13)"
+              />
+
+              <!-- Eyes -->
+              <circle cx="83" cy="70" r="20" fill="#f9f7e9" />
+              <circle cx="177" cy="70" r="20" fill="#f9f7e9" />
+
+              <ellipse cx="87" cy="73" rx="7" ry="10" fill="#293f2b" />
+
+              <ellipse cx="173" cy="73" rx="7" ry="10" fill="#293f2b" />
+
+              <circle cx="89" cy="69" r="2.5" fill="white" />
+              <circle cx="175" cy="69" r="2.5" fill="white" />
+
+              <!-- Rosy cheeks -->
+              <ellipse
+                cx="66"
+                cy="117"
+                rx="15"
+                ry="8"
+                fill="#e5a396"
+                opacity=".85"
+              />
+
+              <ellipse
+                cx="194"
+                cy="117"
+                rx="15"
+                ry="8"
+                fill="#e5a396"
+                opacity=".85"
+              />
+
+              <!-- Smile and nostrils -->
+              <path
+                d="M104 113c9 14 43 14 52 0"
+                stroke="#345033"
+                stroke-width="3.5"
+                stroke-linecap="round"
+              />
+
+              <circle cx="119" cy="101" r="2" fill="#527c3c" />
+              <circle cx="141" cy="101" r="2" fill="#527c3c" />
+            </svg>
+          </button>
+          <span class="ribbit" role="status" hidden></span>
+          <span class="pond-caption">
+            <span class="tiny-dot"></span>
+            a happy little place to be
+          </span>
+
+          <span class="hop-hint">psst… tap the frog</span>
+        </div>
+      </section>
+      <section class="pep-card" aria-label="A little wisdom from the pond">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="4"></circle>
+          <path
+            d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"
+          ></path>
+        </svg>
+        <p class="pep-content">
+          <span class="section-kicker">A LITTLE WISDOM FROM THE POND</span>
+          <span class="pep-quote" id="pep-quote" aria-live="polite"
+            >“You don’t have to have it all figured out to take the next little
+            hop.”</span
+          >
+          <span class="pep-note" id="pep-note"
+            >Small steps count. Even the wobbly ones.</span
+          >
+        </p>
+        <button class="another-button" id="boost-more" type="button">
+          Another little boost
+        </button>
+      </section>
+      <section class="little-joys" id="little-joys">
+        <div class="section-heading">
+          <div>
+            <h2>Little things. Big feelings.</h2>
+            <p>A few tiny ways to make today a little lighter.</p>
+          </div>
+          <span class="no-rush"
+            >no rush, just ribbits <span aria-hidden="true">↝</span></span
+          >
+        </div>
+        <div class="joy-grid">
+          <article class="joy-card mood-card">
+            <div class="joy-card-top">
+              <span class="card-icon" aria-hidden="true">☼</span>
+              <span class="card-number">01 / CHECK IN</span>
+            </div>
+            <h3>How’s your little heart?</h3>
+            <p>All feelings are welcome at this pond.</p>
+            <div
+              class="mood-options"
+              role="group"
+              aria-label="Choose how you're feeling"
+            >
+              <button type="button" data-mood="low" aria-pressed="false">
+                <span aria-hidden="true">☹</span> A little low
+              </button>
+              <button type="button" data-mood="okay" aria-pressed="false">
+                <span aria-hidden="true">☷</span> Doing okay
+              </button>
+              <button type="button" data-mood="good" aria-pressed="false">
+                <span aria-hidden="true">☺</span> Feeling good
+              </button>
+            </div>
+            <p
+              class="mood-response"
+              id="mood-response"
+              role="status"
+              aria-live="polite"
+              hidden
+            ></p>
+          </article>
+          <article class="joy-card breathe-card">
+            <div class="joy-card-top">
+              <span class="card-icon" aria-hidden="true">♧</span>
+              <span class="card-number">02 / SLOW DOWN</span>
+            </div>
+            <h3>Take a lily-pad break.</h3>
+            <p>
+              Unclench your jaw. Drop your shoulders. Let’s take a little breath
+              together.
+            </p>
+            <button class="text-button" type="button">
+              Breathe with me <span aria-hidden="true">→</span>
+            </button>
+          </article>
+          <article class="joy-card pocket-card">
+            <div class="joy-card-top">
+              <span class="card-icon" aria-hidden="true">✧</span>
+              <span class="card-number">03 / FIND YOUR HAPPY</span>
+            </div>
+            <h3>A pocket-sized joy.</h3>
+            <p>
+              A tiny adventure. A little good thing. Sometimes that’s all it
+              takes.
+            </p>
+            <button class="text-button" type="button">
+              Find a little joy <span aria-hidden="true">→</span>
+            </button>
+          </article>
+        </div>
+        <div class="bottom-note">
+          <span aria-hidden="true">♡</span>
+          <p>
+            The world is better with you in it.
+            <strong>Don’t frog-et that.</strong>
+          </p>
+        </div>
+      </section>
+    </main>
+    <dialog
+      class="feature-dialog"
+      id="breathing-dialog"
+      aria-labelledby="breathing-title"
+    >
+      <button
+        class="dialog-close"
+        type="button"
+        aria-label="Close breathing dialog"
+        data-dialog-close
+      >
+        ×
+      </button>
+      <h2 id="breathing-title">A little breathing break</h2>
+      <p class="dialog-intro">
+        Let your shoulders soften. There’s nowhere else you need to be.
+      </p>
+      <div class="breath-orb" id="breath-orb" aria-hidden="true"></div>
+      <p
+        class="breathing-prompt"
+        id="breathing-prompt"
+        role="status"
+        aria-live="polite"
+      >
+        Get comfortable. We’ll start together.
+      </p>
+      <p class="breathing-cycle" id="breathing-cycle">
+        Four gentle cycles · 32 seconds
+      </p>
+      <button class="dialog-action" id="breath-again" type="button" hidden>
+        Another breathing break
+      </button>
+    </dialog>
+
+    <dialog
+      class="feature-dialog"
+      id="joy-dialog"
+      aria-labelledby="joy-dialog-title"
+    >
+      <button
+        class="dialog-close"
+        type="button"
+        aria-label="Close joy dialog"
+        data-dialog-close
+      >
+        ×
+      </button>
+      <h2 id="joy-dialog-title">A pocket-sized joy</h2>
+      <p class="dialog-intro">A small invitation for this moment:</p>
+      <p class="joy-suggestion" id="joy-suggestion" aria-live="polite"></p>
+      <button class="dialog-action" id="another-joy" type="button">
+        Find another little joy
+      </button>
+    </dialog>
+
+    <dialog
+      class="feature-dialog note-dialog"
+      id="note-dialog"
+      aria-labelledby="note-title"
+    >
+      <button
+        class="dialog-close"
+        type="button"
+        aria-label="Close note"
+        data-dialog-close
+      >
+        ×
+      </button>
+      <h2 id="note-title">A note for frog</h2>
+      <p class="note-message">
+        You don’t have to be ribbiting to be remarkable. You’re loved just as
+        you are, on the sunny lily‑pad days and the swampy ones. I’m so hoppy
+        you’re here, exactly as you are.
+      </p>
+    </dialog>
+  </body>
+</html>
