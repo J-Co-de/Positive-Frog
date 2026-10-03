@@ -76,7 +76,7 @@ let breathingSoundManaged = false;
 let frogHopTimer = null;
 let frogSpeechTimer = null;
 
-function makeFrogHop(showSpeech = false) {
+function makeFrogHop() {
   playPing();
   frogButton.classList.remove('is-hopping');
   void frogButton.offsetWidth;
@@ -86,7 +86,6 @@ function makeFrogHop(showSpeech = false) {
     frogButton.classList.remove('is-hopping');
   }, 700);
 
-  if (showSpeech) {
     frogMessageIndex = (frogMessageIndex + 1) % frogMessages.length;
     frogSpeech.textContent = frogMessages[frogMessageIndex];
     frogSpeech.hidden = false;
@@ -94,7 +93,6 @@ function makeFrogHop(showSpeech = false) {
     frogSpeechTimer = setTimeout(() => {
       frogSpeech.hidden = true;
     }, 2200);
-  }
 }
 
 function playPing() {
@@ -114,7 +112,7 @@ function showNextPepTalk() {
   makeFrogHop();
 }
 
-frogButton.addEventListener('click', () => makeFrogHop(true));
+frogButton.addEventListener('click', () => makeFrogHop());
 boostButtons.forEach((button) => button.addEventListener('click', showNextPepTalk));
 
 moodButtons.forEach((button) => {

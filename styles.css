@@ -435,9 +435,10 @@ button {
 
 .ribbit {
     position: absolute;
+    max-width: 8rem;
     z-index: 2;
-    top: 40%;
-    left: 57%;
+    bottom: 12rem;
+    left: 59%;
     padding: 0.55rem 0.8rem;
     border: 1px solid #e6e8dc;
     border-radius: 12px 12px 12px 2px;
@@ -446,11 +447,16 @@ button {
     font-size: 0.8rem;
     white-space: nowrap;
     box-shadow: 0 4px 14px rgb(41 63 43 / 8%);
+    text-wrap: wrap;
 }
 
 .ribbit:not([hidden]) {
     display: block;
     animation: bubble-in 180ms ease-out both;
+}
+
+.frog-button.is-hopping+.ribbit:not([hidden]) {
+    animation: bubble-hop 650ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 
 .pep-content {
@@ -691,6 +697,22 @@ button {
     }
 }
 
+@keyframes bubble-hop {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    38% {
+        transform: translateY(-0.65rem) scale(1.03);
+    }
+
+    68% {
+        transform: translateY(0.1rem) scale(0.99);
+    }
+}
+
 @keyframes breathe-in {
     from {
         transform: scale(0.78);
@@ -720,6 +742,25 @@ button {
         flex-wrap: wrap;
         gap: 0.75rem;
         padding: 0.75rem 1rem;
+    }
+
+    .ribbit {
+        bottom: 7rem;
+    }
+
+    .frog-label {
+        display: none;
+    }
+
+    .pond-caption {
+        position: absolute;
+        top: 92%;
+        left: 22.5%;
+    }
+
+    .hop-hint {
+        left: 1%;
+        rotate: -10deg;
     }
 
     .hyper-links {
